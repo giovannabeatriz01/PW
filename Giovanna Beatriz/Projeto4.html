@@ -1,0 +1,63 @@
+!DOCTYPE html>
+
+<html lange="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title> Formulário de feedback - Programação web</title>
+</head>
+
+<body>
+    <h2>Formulário de feedback - Curso de Programação Web</h2>
+    <p>Preencha o formulário abaixo para avaliarmos sua experiência no curso.</p>
+
+    <form action="#" method="POST" <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" required placeholder="Digite seu nome">
+        <small>Campo obrigatório: Este campo usa o atributo <code>required</code> para garantir que seja
+            preenchido.</small>
+        <br><br>
+
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+        <small>Campo obrigatório: O navegador verificar se o formato digitado é um e-mail válido.</small>
+        <br><br>
+
+        <!-- Campo de Avaliação (Número com limite mínimo e máximo)-->
+        <label for="avaliação">Avaliação do Curso</label>
+        <input type="number" id="avaliação" name="avaliação" min="1" max="10" required>
+        <small>O atributo <code>min</code> difene o valor mínimo e <code>max</code> o valor máximo permitido</small>
+        <br><br>
+
+
+        <!-- Campo de seleção (Dropdown) -->
+        <label for="satisfação">Nível de satisfação:</label>
+        <select id="satisfação" name="satisfação" required>
+            <option value="">Selecione</option>
+            <option value="excelente">Excelente</option>
+            <option value="bom">Bom</option>
+            <option value="regular">Regular</option>
+            <option value="ruim">Ruim</option>
+        </select>
+        <small>Usamos a tag <code>&lt;select&gt;</code> para criar um menu suspenso com opções pré definidas.</small>
+        <br><br>
+
+        <!-- Campo de Comentário (Área de texto) -->
+        <label for="comentarios">Comentário sobre o curso:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Deixe seu feedback aqui..."></textarea>
+        <small>A tag <code> &lt;textarea&gl;</code> permi</small>
+        <br><br>
+
+        <!-- Checkbox (Aceitar os Termos) -->
+        <input type="checkbox" id="termos" name="termos" required>
+        <label for="termos">Aceito os termos de privacidade</label>
+        <small>O <code>required</code> garante que o usuário só possa enviar se marcar essa opção.</small>
+        <br><br>
+
+        <!-- Botão de Envio -->
+        <button type="submit">Enviar feedback </button>
+        <small>O <code>&lt;button type="submit"&gt</code> envia os dados do formulário.</small>
+    </form>
+</body>
+
+</html>

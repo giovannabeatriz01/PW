@@ -1,0 +1,27 @@
+body {
+    background-color: #27272a;
+}
+
+.container {
+    display: flex;
+    gap: 10px; 
+    /* row-gap: 10px; */
+    /* column-gap: 30px;  */
+    /* height: 600px;  */
+    /* flex-direction: column wrap; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #6366f1;
+}
+
+.item {
+    /* width: 200px; */
+    height: 200px;
+    background-color: #38bdf8 ;
+}
+
+.item-3 {
+    flex-grow: 1;
+}
+
